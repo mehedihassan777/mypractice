@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+
+    <h2>JavaScript Promise</h2>
+
+    <p id="demo"></p>
+    <p id="demo2"></p>
+
+    <script>
+        const adventurer = {
+            name: 'Alice',
+            cat: {
+                name: 'Dinah'
+            }
+        };
+        const dogName = adventurer.dog?.name;
+        document.getElementById("demo").innerHTML = dogName;
+        // expected output: undefined
+
+        document.getElementById("demo2").innerHTML = (adventurer.someNonExistentMethod?.());
+        // expected output: undefined
+
+    </script>
+
+</body>
+
+</html>

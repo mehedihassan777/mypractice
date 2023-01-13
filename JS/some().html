@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+
+    <h2>JavaScript Arrays</h2>
+
+    <p>Click the button to test if any array elements has a higher value than the input.</p>
+
+    <p>Input: <input type="number" id="toCheck" value="15"></p>
+
+    <button onclick="myFunction()">Test</button>
+
+    <p>Values higher: <span id="demo"></span></p>
+
+    <script>
+        const numbers = [4, 12, 16, 20];
+
+        function checkValue(x) {
+            return x > document.getElementById("toCheck").value;
+        }
+
+        function myFunction() {
+            document.getElementById("demo").innerHTML = numbers.some(checkValue);
+        }
+    </script>
+
+</body>
+
+</html>

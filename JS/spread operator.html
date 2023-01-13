@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+
+    <h2>JavaScript Promise</h2>
+
+    <p id="demo"></p>
+
+    <script>
+        function sum(x, y, z) {
+            return x + y + z;
+        }
+
+        const numbers = [1, 2, 3];
+
+        document.getElementById("demo").innerHTML = (sum(...numbers));
+        // expected output: 6
+    </script>
+
+</body>
+
+</html>
